@@ -19,6 +19,7 @@ body{
     padding: 0;
     background-image: url('resources/filteredbackground2.jpg');
     
+    
 }
 #navbar{
     height:10vh;
@@ -28,7 +29,8 @@ body{
     align-items: center;
     justify-content:left;
     position:fixed;
-   
+    padding-left: 2.5%;
+    padding-right: 5%;
     font-size: 2rem;
     border-bottom: 0.5rem solid #fff ;
     z-index: 1;
@@ -37,18 +39,37 @@ body{
 .nav-item{
     height: auto;
     width: auto;
-   
+    text-decoration: none;
     padding: 1rem;
     color: #fff;
     text-align: center;
     line-height: 10vh;
     transition: background-color 0.25s;
 }
+.nav-item a{
+    text-decoration: none;
+    color: #fff;
+}
 .nav-item:hover{
     cursor: pointer;
     background-color: #7C0A02;
     border-radius: 15%;
     border: 0.5rem solid #fff;
+}
+#searchbar-div{
+    height: auto;
+    width: auto;
+    /*background-color: indianred;*/
+    z-index: 1;
+    margin-left: auto;
+    
+}
+#searchbar{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    
 }
 #main-container{
     position: fixed;
@@ -75,6 +96,9 @@ body{
     color: hsla(0, 0%, 100%, 1.0);
     font-size: 1.5rem;
     text-shadow: 2px 2px 0px #000000;
+}
+#main-container h2{
+    color: hsla(0, 0%, 100%, 1.0); 
 }
 #main-container h3{
     color: hsla(0, 0%, 100%, 1.0);
